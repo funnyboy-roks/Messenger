@@ -1,0 +1,15 @@
+name: Messenger
+version: '${project.version}'
+main: com.funnyboyroks.messenger.Messenger
+api-version: '1.17'
+authors: [funnyboy_roks]
+description: 'A plugin to send rotating messages in chat on a scheduled interval.'
+commands:
+  messenger:
+    description: Command to control Messenger
+    permission: messenger.command.messenger
+    usage: /messenger <add|reload>
+permissions:
+  messenger.command.messenger:
+    description: Permission to run the `/messenger` command
+    default: op
