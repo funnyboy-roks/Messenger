@@ -1,6 +1,8 @@
 # Messenger
 
-A plugin to send MiniMessage formatted rotating messages in chat on a scheduled interval.
+A plugin to send
+[MiniMessage](https://docs.advntr.dev/minimessage/format.html) formatted
+rotating messages in chat on a scheduled interval.
 
 ## Configuration
 
