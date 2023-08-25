@@ -51,10 +51,44 @@ A message can be formatted using
 `%player%` is included in the message, it will be replaced with the
 player's username.
 
+## API
+
+The plugin offers a simple API which allows for adding new messages.
+
+To add it as a dependency if using maven, add the following to your pom.xml:
+
+```xml
+<repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+</repository>
+
+<dependency>
+    <groupId>com.github.funnyboy-roks</groupId>
+    <artifactId>Messenger</artifactId>
+    <version>Tag</version>
+</dependency>
+```
+
+Otherwise, checkout the [jitpack repo](https://jitpack.io/#funnyboy-roks/Messenger/1.0) for other systems
+
+### Usage example
+
+```java
+// construct a new message that says "hello " + playername
+// and is sent to all players
+Message msg = new Message(
+    p -> Component.text("hello ").append(p.displayName()),
+    p -> true
+);
+
+// Add a message to the list
+Messenger.api().addMessage(msg);
+```
+
 ## Future To-Do
 
 - [ ] PAPI support - If there is interest
-- [ ] Documented API
 - [ ] More configuration options
 
 I'm always looking for ideas, if you have any, please create an issue
