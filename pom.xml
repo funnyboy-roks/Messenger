@@ -82,7 +82,7 @@
         <dependency>
             <groupId>com.github.Exlll.ConfigLib</groupId>
             <artifactId>configlib-yaml</artifactId>
-            <version>v4.4.0</version>
+            <version>v4.5.0</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
